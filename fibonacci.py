@@ -9,14 +9,14 @@
 def fibonacci(n):
     if n<= 0:
         print("Invalid input.")
-    elif n == 1 or n == 2:
+    elif n == 1 or n == 2:        #Establishes that the first two numbers in sequence are 1
         return 1
     else:
-        return fibonacci(n-1) +fibonacci(n-2)
+        return fibonacci(n-1) +fibonacci(n-2)        # Tells python to go back to previous two fibonacci numbers and add them
     
 def main():
-    n = int(input("Enter a positive integer: "))
-    for n in range(1,n):
+    n = int(input("Enter a positive integer: "))     # Asks user for an input
+    for n in range(1,n):                             # Lists all fibonacci numbers starting at the first and then going to the nth number(user's input)
         print(fibonacci(n))
        
     
